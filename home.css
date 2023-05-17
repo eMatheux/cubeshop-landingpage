@@ -1,0 +1,263 @@
+/* DEFAULT */
+body {
+    font-family: Raleway, sans-serif;
+    background: #282a2b;
+    color: #c8c8c8;
+}
+
+
+/* HEADER */
+
+header {
+    background-image: url('https://i.pinimg.com/originals/9c/f5/b6/9cf5b64d6cd2963ef96eabb4b2c1cbe6.jpg');
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.content-header img {
+    margin: -40px 0 0 0;
+    width: 50%;
+    transition: 0.5s;
+}
+
+.content-header img:hover {
+    transform: scale(1.1);
+}
+
+.content-header h2 {
+    font-size: 30px;
+    color: white;
+}
+
+/* CONTENT MAIN VANTAGENS */
+
+.main-vantagens {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0 0;
+    box-sizing: border-box;
+}
+
+.main-vantagens p {
+    padding: 10px 0 0 0;
+    font-size: 16px;
+}
+
+.main-vantagens h2 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.cards {
+    margin: 50px 0 0 0;
+    display: flex;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    gap: 25px;
+    width: 1020px;
+}
+
+
+.cards>.card-1,
+.card-2,
+.card-3 {
+    width: calc(940 / 3);
+    background: #181a1b;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.cards p {
+    font-size: 17px;
+}
+
+
+/* CONTENT MAIN ESCOLHA O PLANO */
+
+.main-select {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0 0;
+}
+
+.main-select h2 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.main-select p {
+    font-size: 17px;
+    padding: 10px 0 0 0;
+}
+
+.card-select {
+    background-color: #181a1b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    margin: 30px 0 40px 0;
+    width: 450px;
+}
+
+.card-select h3 {
+    font-size: 25px;
+}
+
+.card-select ul {
+    padding-top: 15px;
+}
+
+.card-select li {
+    padding-top: 9px;
+    font-size: 19px;
+}
+
+.card-select input {
+    margin-top: 25px;
+    width: 70%;
+    padding: 10px;
+    color: #007bff;
+    border-color: #007bff;
+    background: none;
+    border-radius: 10px;
+    font-size: 19px;
+}
+
+.card-select input:hover {
+    transition: 0.5s;
+    background-color: #007bff;
+    color: white;
+}
+
+.fa-check:before {
+    content: "\f00c";
+}
+
+/* CONTENT MAIN OTHERS */
+
+.main-others {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.content-other {
+    display: flex;
+    padding: 30px;
+    width: 940px;
+    background: #181a1b;
+    border-radius: 10px;
+}
+
+.content-other i {
+    font-size: 60px;
+}
+
+.content-other p {
+    margin-top: 10px;
+    font-size: 19px;
+}
+
+.other-1 {
+    border-right: 1px solid #c8c8c8;
+}
+
+.other3 {
+    border-left: 1px solid #c8c8c8;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background-color: #181a1b;
+    color: #c8c8c8;
+    padding: 10px;
+}
+
+/* RESPONSIVE HOME */
+
+@media screen and (max-width: 940px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-header h1 > img {
+        width: 100%;
+    }
+    
+
+    .main-vantagens {
+        width: auto;
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        width: 450px;
+    }
+
+    .main-select h2 {
+        text-align: center;
+    }
+
+    .main-select p {
+        text-align: center;
+    }
+
+    .card-select {
+        width: auto;
+        padding: 40px;
+        border-radius: 10px;
+    }
+
+    .main-others {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-other {
+        flex-direction: column;
+        gap: 60px;
+        width: 300px;
+    }
+
+    .other-1 {
+        border-right: none;
+        border-bottom: 3px solid #c8c8c8;
+        padding-bottom: 40px;
+    }
+
+    .other3 {
+        border-left: none;
+        border-top: 3px solid #c8c8c8;
+        padding-top: 20px;
+    }
+
+    
+
+}
